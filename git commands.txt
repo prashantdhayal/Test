@@ -1,3 +1,11 @@
+#Reference
+https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/
+
+#Set gloabal values
+git config --global user.name "YOUR_USERNAME" 
+git config --global user.email "im_satoshi@musk.com"
+git config --global --list # To check the info you just provided
+
 /* Add a git repository or Initiates an empty git repository*/
 git init
 
@@ -31,11 +39,13 @@ git remote add origin https://github.com/prashantdhayal/Test.git
 git remote -v
 
 #Push the changes
+git push --all origin
 git push -u origin main
 git push origin HEAD:Main
 
 #Pull the changes
 git pull
+git pull --all
 git pull origin Main
 git pull origin master
 
