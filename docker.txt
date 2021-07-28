@@ -1,0 +1,27 @@
+#Remove the old versions of docker
+sudo apt-get remove docker docker-engine docker.io
+
+#Check everything is update or not
+sudo apt-get update
+
+#Install Docker engine
+sudo apt-get install docker-ce
+
+#If above not work, then try this
+docker install   			# This will give the exact docker command
+
+sudo apt install docker.io
+sudo snap install docker
+
+
+#Check the versions
+docker --version
+sudo docker run hello-world				# Pull the hello-world images
+sudo docker images						# See all the images
+sudo docker ps -a						# See all the containers pulled so far
+sudo docker ps 							# See all the running containers pulled so far
+
+
+#Laravel commands
+https://engineering.carsguide.com.au/how-to-dockerize-a-laravel-application-77a24ba669c5
+https://www.digitalocean.com/community/tutorials/how-to-containerize-a-laravel-application-for-development-with-docker-compose-on-ubuntu-18-04
